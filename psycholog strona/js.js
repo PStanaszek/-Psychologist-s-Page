@@ -79,10 +79,11 @@ $('.slider').each(function() {              // For every slider
 
 //slide  offer's divs
 var $offerDivs = $("[id=offeDiv]");
-$offerDivs.hide();
-$offerDivs.each(function(index){
-    $(this).delay(800*index).slideDown(800);
-});
+$offerDivs.toggleClass("animated fadeIn");
+/*$offerDivs.hide();*/
+/*$offerDivs.each(function(index){
+    $(this).delay(5000*index).toggleClass("animated fadeIn");
+});*/
 // slide phone number on contact phone hover
 function callContactAnimate(){
 var $callDivsText = $(".call");
