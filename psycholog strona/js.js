@@ -70,7 +70,7 @@ $('.slider').each(function() {              // For every slider
     e.preventDefault();
 
     // top position relative to the document
-    var pos = $id.offset().top
+    var pos = $id.offset().top;
 
     // animated top scrolling
     $('body, html').animate({scrollTop: (pos)});
@@ -97,3 +97,20 @@ var $callDivsText = $(".call");
 };
 
 callContactAnimate();
+
+
+/*Contact Google Map coords 49.7390693,19.5799632,19.5*/
+
+function initMap() {
+    console.log("Maps ok")
+        var position = {lat: 49.7390693, lng: 19.5799632};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: position
+        });
+        var marker = new google.maps.Marker({
+          position: position,
+          map: map,
+          title:"Psycholog Daria Stanaszek Sucha Beskidzka Mickiewicza 43 "
+        });
+      }

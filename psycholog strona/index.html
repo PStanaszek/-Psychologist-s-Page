@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="js/animate.css">
 </head>
 <body>
-  
+
    <nav class="navbar navbar-default navbar-fixed-top transparent" >
       <div class="container-fluid" id="nav">
                <div class="navbar-header">
@@ -49,11 +49,12 @@
      
        </div>
    </nav>
-   
    <header  id="header">
        <div class="call"><span>Umów się na wizytę: <p>+48 606 493 485</p></span><img src="img/mobile-phone.png" alt="Zadzwoń"></div>
 
-</header>  
+</header>
+
+
     <section id="slider">   
     <div class="slider">
     <div class="slide-viwer">
@@ -88,11 +89,11 @@
  
       
   </div>
-  </div>
+  
 
  
     </section> 
-   <section id="about" class="section">
+   <section id="about">
        <div class="container">
           <div class="col-lg-12">
             <h1>O mnie</h1>
@@ -106,7 +107,7 @@
        </div>
    </section>
      
-   <section id="how" class="section">
+   <section id="how">
        <div class="container">
            <div class="col-lg-12">
              <h1>Jak pracuję</h1>
@@ -122,7 +123,7 @@
        <div class="container">
          
           <h1 class= "option animated bounceInLeft">Oferuję leczenie w zakresie:</h1>
-              
+            <div class="container">  
                <div class="row">
                   
                    <div class="col-sm-12 col-md-6 col-lg-4">
@@ -187,19 +188,26 @@
                    </div>
                    </div>
                    
-                   <div class="row">
-                   <div class="col-sm-12 col-md-6 col-lg-6">
+                   
+                   <div class="col-sm-12 col-md-6 col-lg-4">
+                   <div id="offeDiv">
+                   <p>Leczenia uzależnień</p>
+                   </div>
+                   </div>
+                   
+                   <div class="col-sm-12 col-md-6 col-lg-4">
+                   <div id="offeDiv">
+                   <p>Porad psychologicznych w sytuacjach trudnych i kryzysowych</p>
+                   </div>
+                   </div>
+                   
+                   <div class="col-sm-12 col-md-6 col-lg-4">
                    <div id="offeDiv">
                    <p>Orzeczenia o stopniu niepełnosprawności</p>
                    </div>
                    </div>
                    
-                   <div class="col-sm-12 col-md-6 col-lg-6">
-                   <div id="offeDiv">
-                   <p>Porad psychologicznych w sytuacjach trudnych i kryzysowych</p>
-                   </div>
-                   </div>
-                    </div>
+                </div>
                 </div>
             </div>
             
@@ -208,7 +216,7 @@
    
    
    
-   <section id="price" class="section">
+   <section id="price">
        <div class="container">
            <h1 class= "option animated bounceInLeft">Cennik</h1>
               
@@ -249,13 +257,62 @@
                    <span id="price-list">100 zł</span>
                    </div>
                    </div>
+                   
                </div>
        </div>
    </section>
    
-   <section id="contact" class="section">
+   <section id="contact">
+      
+       <div class="container">
+           <div class="col-md-6">
+               <div id="map">
+                   
+               </div>
+           </div>
+           
+           <div class="col-md-6 contacts">
+              <div class="row">
+                  
+                   <div class="col-md-12">
+                   <p>W celu umówienia się na wizytę proszę</p>
+                   <p> o kontakt telefoniczny lub wiadomość mailową</p>    
+                
+
+
+                   </div>
+                   <div class="col-md-12">
+                   <span><img src="/img/phone.png" alt="Kontakt telefoniczny"></span>
+                        <p>Tel:+48 606 493 485</p>
+
+                   </div>
+
+                   <div class="col-md-12">
+                   <span><img src="/img/email.png" alt="Kontakt mailowy"></span>
+                    <p>Mail: daria_stan@op.pl</p>
+
+                   </div>
+
+                   <div class="col-md-12">
+                       <span><img src="/img/maps-and-flags%20(1).png" alt="Adres gabinetu"> </span>
+                   <p>Adres gabinetu:</p>
+                   <p>Sucha Beskidzka
+                   ul.Mickiewicza 43</p>
+                   <p>Brama wjazdowa obok Banku PKO</p>
+                  
+
+                   </div>
+               </div>
+         
+           </div>
+           
+           
+           </div>
+           
+           
+    </section>   
  
-   </section>
+  
    
    <footer>
        <div class="container">
@@ -266,9 +323,14 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHQcPyVjBbMmJ_H_msPFiLCUztYRu2RXo&callback=initMap">
+    </script>
+    
     <script src="js.js"></script>
    
-   
+  
        
 </body>
 </html>
