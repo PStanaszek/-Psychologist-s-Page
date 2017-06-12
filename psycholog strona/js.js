@@ -59,7 +59,9 @@ $('.slider').each(function() {              // For every slider
   $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
     var id = $(this).attr('href');
+    var $offerDivs = $('div[id="offeDiv"]');
 
+    $offerDivs.toggleClass("animated fadeIn"); 
     // target element
     var $id = $(id);
     if ($id.length === 0) {
@@ -78,20 +80,19 @@ $('.slider').each(function() {              // For every slider
 });
 
 //slide  offer's divs
-var $offerDivs = $("[id=offeDiv]");
-$offerDivs.toggleClass("animated fadeIn");
-/*$offerDivs.hide();*/
-/*$offerDivs.each(function(index){
-    $(this).delay(5000*index).toggleClass("animated fadeIn");
-});*/
-// slide phone number on contact phone hover
-function callContactAnimate(){
-var $callDivsText = $(".call");
- $(".call span").hide();
 
- $callDivsText.on( "mouseover, click", function(){
-     $(".call span").fadeToggle();
-     $callDivsText.toggleClass("clickedCall");
+
+   
+   /* .toggleClass("animated slieInLeft");*/
+
+
+
+function callContactAnimate(){  
+var $callDivsText = $(".call");
+$(".call span").hide();
+$callDivsText.on( "mouseover, click", function(){
+    $(".call span").fadeToggle();
+    $callDivsText.toggleClass("clickedCall");
 
  });
 };
