@@ -1,3 +1,4 @@
 # -Psychologist-s-Page
- Psychologist's Page Strona psychologa
-http://www.dariastanaszek.pl/
+<p> Psychologist's Page Strona psychologa</p>
+<p>http://www.dariastanaszek.pl/</p>
+<p>First own project based on Bootstrap</p>
