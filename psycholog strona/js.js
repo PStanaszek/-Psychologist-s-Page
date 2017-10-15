@@ -79,6 +79,13 @@ $('.slider').each(function() {              // For every slider
       
 });
 
+var $navbarButton = $("button");
+var $section = $("section");
+$navbarButton.on("click", function(){
+    $section.toggleClass("clicked")
+    
+});
+
 //slide  offer's divs
 
 
@@ -98,6 +105,7 @@ $callDivsText.on( "mouseover, click", function(){
 };
 
 callContactAnimate();
+
 
 
 /*Contact Google Map coords 49.7390693,19.5799632,19.5*/
