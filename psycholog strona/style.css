@@ -20,7 +20,9 @@ body {
 
 }
 
-
+.brand-container {
+    padding: 0px;
+}
 
 
 
@@ -133,7 +135,6 @@ body {
     width: 100%;
 }
 
-
 #slider {
     padding: 0px;
     overflow: hidden;
@@ -176,12 +177,11 @@ body {
 
 #slider-text {
     animation-duration: 5s;
-
     left: 10%;
     position: absolute;
     text-align: center;
     top: 30%;
-    font-size: 80px;
+    font-size: 7vw;
     font-weight: 800;
     color: white;
     text-shadow: 0px 2px 5px #000000,
